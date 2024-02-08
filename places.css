@@ -1,0 +1,58 @@
+body{
+    background:linear-gradient(30deg,rgb(78, 78, 78),rgb(58,58,58));
+}
+header{
+    position:static;
+}
+main ul{
+    font-weight:bold;
+    font-family: 'Times New Roman', Times, serif;
+    width: 1200px;
+    margin:0 auto 48px auto;/* top left bottom right*/
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 100px;/*row and column*/
+} 
+li:nth-of-type(1){
+    grid-column:1/2 span;
+}
+li:nth-of-type(10){
+    grid-column:1/span 2;
+}
+main li{
+    list-style: none;
+    display:flex;
+    background-color:white;
+    border:none;
+    border-radius:6px;
+    box-shadow:1px 1px 4px rgba(0,0,0,.2);
+    overflow:hidden; /*Due  to exceeding the border limit by the image,it's corners doesn't get curves,to overcome it ovrflow is used*/   
+}
+main li h2{
+    font-weight: bold;
+}
+    main li img{
+    width:300px; 
+    height:280px;
+    object-fit:cover;
+}
+.item-content{
+    padding:24px;
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+}
+.action{
+    text-align: right;
+}
+.action a{
+    color:rgb(5, 184, 212);
+    text-decoration: none;
+    padding:6px;
+    font-size: 20px;      
+    font-weight: bolder;
+}
+.action a:hover{
+    background-color:rgba(5, 212, 177, 0.236);
+}
+
