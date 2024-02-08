@@ -11,13 +11,13 @@ main ul{
     margin:0 auto 48px auto;/* top left bottom right*/
     display:grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px 100px;/*row and column*/
+    gap: 20px 30px;/*row and column*/
 } 
 li:nth-of-type(1){
     grid-column:1/2 span;
 }
 li:nth-of-type(10){
-    grid-column:1/span 2;
+    grid-column:1/2 span;
 }
 main li{
     list-style: none;
@@ -33,7 +33,7 @@ main li h2{
 }
     main li img{
     width:300px; 
-    height:280px;
+    height:300px;
     object-fit:cover;
 }
 .item-content{
